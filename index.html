@@ -21,6 +21,7 @@
         text-align: center;
     }
 
+    /* LOGO */
     .logo-box {
         padding-top: 40px;
         padding-bottom: 10px;
@@ -33,6 +34,7 @@
         margin: 0 auto;
     }
 
+    /* HERO */
     .hero {
         padding: 20px 22px 40px;
         background: linear-gradient(to bottom, #000 0%, #111 60%, #0d0d0d 100%);
@@ -52,6 +54,7 @@
         line-height: 1.6;
     }
 
+    /* CTA */
     .cta-button {
         background: linear-gradient(135deg, #f5d47a, #d4a93d);
         color: #000;
@@ -67,6 +70,7 @@
         box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
     }
 
+    /* SECTION TITLE */
     .section-title {
         margin-top: 45px;
         font-size: 20px;
@@ -74,6 +78,7 @@
         color: #f5d47a;
     }
 
+    /* BENEFITS */
     .benefits {
         padding: 25px 22px 50px;
     }
@@ -100,19 +105,40 @@
         line-height: 1.7;
     }
 
-    /* SEO Helper: Hidden block */
+    /* Hidden SEO Block */
     .seo-hidden {
         display: none;
         visibility: hidden;
     }
+
+    /* Desktop Enhancements */
+    @media (min-width: 768px) {
+        .hero {
+            padding: 40px 0 60px;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+        }
+
+        .section-title {
+            font-size: 24px;
+        }
+
+        .benefit-cards {
+            width: 650px;
+            margin: 0 auto;
+        }
+    }
 </style>
 
-<!-- STRUCTURED DATA -->
+<!-- STRUCTURED DATA (FIXED WITH IMAGE Persian Logo) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "طلای رایگان",
+  "image": "https://digimigiatoo.github.io/melli-fa.png",
   "description": "دریافت طلای واقعی بدون خرید اولیه؛ یک فرصت هوشمند برای شروع سرمایه‌گذاری.",
   "brand": {
     "@type": "Brand",
@@ -130,10 +156,12 @@
 </head>
 <body>
 
+<!-- LOGO -->
 <div class="logo-box">
-    <img src="melli-fa.png" alt="لوگو">
+    <img src="melli-fa.png" alt="لوگوی ملی گلد">
 </div>
 
+<!-- HERO SECTION -->
 <section class="hero">
     <h1>طلای واقعی، بدون خرید اولیه</h1>
     <p class="subtitle">
@@ -146,9 +174,11 @@
     </a>
 </section>
 
+<!-- BENEFITS -->
 <h2 class="section-title">مزایای دریافت طلا</h2>
 
 <section class="benefits">
+
     <div class="card">
         <div class="card-title">بدون خرید اولیه</div>
         <div class="card-text">طلا مستقیماً در حساب شما قرار می‌گیرد؛ بدون نیاز به پرداخت اولیه.</div>
@@ -163,11 +193,12 @@
         <div class="card-title">شروع سریع و آسان</div>
         <div class="card-text">فرآیند ثبت‌نام ساده است و در چند دقیقه تکمیل می‌شود.</div>
     </div>
+
 </section>
 
-<!-- SEO HIDDEN BLOCK -->
+<!-- Hidden SEO Keywords -->
 <div class="seo-hidden">
-    طلای رایگان، طلای واقعی بدون خرید، سوت طلا، دریافت طلای هدیه، روش دریافت طلا، سرمایه‌گذاری طلا برای مبتدی‌ها، هدیه طلا واقعی.
+طلای رایگان، طلای واقعی، دریافت طلا، هدیه طلا، سوت طلا، سرمایه‌گذاری طلا، طلای بدون خرید، طلا هدیه، هدیه ملی‌گلد.
 </div>
 
 </body>
