@@ -1,17 +1,17 @@
+[START OF FILE]
+
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>طلای هدیه ملی‌گلد | ثبت‌نام و دریافت سوت طلا</title>
+  <title>طلای هدیه ملی‌گلد | دریافت تا 100 گرم طلای رایگان</title>
 
-  <!-- SEO -->
-  <meta name="description" content="با ثبت‌نام در ملی‌گلد از طریق لینک دعوت، تا سقف 100 گرم طلای هدیه دریافت کنید. امکان برداشت نقدی یا نگهداری و سود از رشد قیمت طلا." />
-  <meta name="keywords" content="ملی گلد, ملی‌گلد, melligold, طلای دیجیتال, سوت طلا, طلای رایگان, خرید طلا, سرمایه‌گذاری در طلا" />
+  <meta name="description" content="با ثبت‌نام در ملی‌گلد از طریق لینک دعوت، تا سقف 100 گرم طلای هدیه دریافت کنید. امکان برداشت نقدی یا سودگیری از رشد طلا.">
+  <meta name="keywords" content="ملی گلد, ملی‌گلد, طلای رایگان, سوت طلا, هدیه طلا, طلا دیجیتال, خرید طلا, هدیه ملی گلد">
 
-  <!-- فونت فارسی -->
-  <link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css" rel="stylesheet">
 
   <style>
     :root {
@@ -21,8 +21,7 @@
       --gold: #d4af37;
       --text-main: #1f2933;
       --text-soft: #6b7280;
-      --radius-lg: 18px;
-      --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.16);
+      --shadow: 0 18px 38px rgba(0,0,0,0.22);
     }
 
     body {
@@ -33,55 +32,228 @@
       color: var(--text-main);
     }
 
+    /* HERO */
     .hero {
-      background: radial-gradient(circle at top left, #23a56a 0%, var(--green-dark) 52%, #06261c 100%);
-      color: #ffffff;
-      padding: 32px 20px 56px;
+      background: radial-gradient(circle at top left, #25a76d 0%, #0f3e2e 60%, #06261c 100%);
+      padding: 50px 20px 70px;
       text-align: center;
+      color: #ffffff;
       position: relative;
     }
 
-    .hero-logo img {
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 20%;
+      left: -40%;
+      width: 180%;
+      height: 1px;
+      background: rgba(212,175,55,0.35);
+    }
+
+    .logo-box {
+      background: rgba(0,0,0,0.25);
+      padding: 14px 30px;
+      border-radius: 60px;
+      display: inline-block;
+      backdrop-filter: blur(8px);
+    }
+
+    .logo-box img {
       max-width: 180px;
-      margin-bottom: 24px;
     }
 
     .hero-title {
-      font-size: 28px;
+      margin-top: 24px;
+      font-size: 30px;
       font-weight: 700;
     }
 
-    .hero-highlight {
+    .highlight {
       color: var(--gold);
     }
 
-    .btn-main {
-      padding: 14px 40px;
-      border-radius: 999px;
-      background-image: linear-gradient(135deg, #ffe18a, #f7c74a, #e6b030);
-      font-size: 20px;
-      font-weight: 700;
-      color: #0b2016;
-      text-decoration: none;
+    .hero-text {
+      max-width: 650px;
+      margin: 18px auto 0;
+      font-size: 17px;
+      line-height: 1.9;
+      opacity: 0.95;
     }
+
+    .cta {
+      margin-top: 32px;
+      display: inline-block;
+      background: linear-gradient(135deg, #ffdf8a, #f7c84f, #e5ae2d);
+      padding: 15px 40px;
+      border-radius: 60px;
+      font-size: 19px;
+      font-weight: 700;
+      color: #0f2f22;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+    }
+
+    .cta:hover {
+      filter: brightness(1.08);
+      transform: translateY(-2px);
+    }
+
+    .section {
+      max-width: 950px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 22px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--green-soft);
+      padding: 18px;
+      border-radius: 14px;
+      border: 1px solid #e3ece6;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: var(--text-soft);
+      line-height: 1.9;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .steps li {
+      list-style: none;
+      background: #ffffff;
+      border: 1px solid #e3e3e3;
+      border-radius: 12px;
+      padding: 16px;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .step-num {
+      background: var(--green-main);
+      color: white;
+      display: inline-flex;
+      width: 22px;
+      height: 22px;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-left: 6px;
+    }
+
+    .en-logo {
+      display: block;
+      margin: 40px auto 0;
+      max-width: 200px;
+      opacity: .9;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      border-top: 1px solid #eee;
+    }
+
   </style>
 </head>
 
 <body>
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-logo">
-      <img src="melli-fa.png" alt="ملی‌گلد" />
+    <div class="logo-box">
+      <img src="melli-fa.png" alt="ملی‌گلد">
     </div>
 
     <h1 class="hero-title">
-      طلای <span class="hero-highlight">هدیه</span> از ملی‌گلد
+      دریافت <span class="highlight">طلای هدیه</span> از ملی‌گلد
     </h1>
 
-    <a class="btn-main" href="https://melligold.com/pwa/account/?ref=MG1dEVUEf1tb" target="_blank">
-      دریافت طلای هدیه
+    <p class="hero-text">
+      با ثبت‌نام در ملی‌گلد از طریق لینک دعوت، می‌توانید تا سقف
+      <b>۱۰۰ گرم طلای رایگان</b>
+      دریافت کنید. طلای هدیه قابل برداشت نقدی است یا می‌توانید برای رشد قیمت طلا نگه‌داری کنید.
+    </p>
+
+    <a class="cta" href="https://melligold.com/pwa/account/?ref=MG1dEVUEf1tb" target="_blank">
+      🎁 دریافت طلای هدیه
     </a>
   </section>
 
+  <!-- BENEFITS -->
+  <section class="section">
+    <h2 class="section-title">⭐ مزایای دریافت هدیه ملی‌گلد</h2>
+
+    <div class="benefits">
+      <div class="card">
+        <div class="card-title">💰 طلای واقعی</div>
+        <div class="card-text">طلای هدیه به‌صورت واقعی در حساب شما ثبت می‌شود و قابل خرید و فروش است.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">📈 امکان سود از رشد طلا</div>
+        <div class="card-text">می‌توانید طلای هدیه را نگه‌دارید و از افزایش قیمت طلا سود بگیرید.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">⚡ ثبت‌نام سریع</div>
+        <div class="card-text">همه مراحل کاملاً آنلاین است و در چند دقیقه هدیه‌تان فعال می‌شود.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="section">
+    <h2 class="section-title">📌 مراحل دریافت طلای هدیه</h2>
+
+    <ul class="steps">
+      <li><span class="step-num">۱</span> روی دکمه دریافت هدیه بزنید.</li>
+      <li><span class="step-num">۲</span> ثبت‌نام ملی‌گلد را تکمیل کنید.</li>
+      <li><span class="step-num">۳</span> طلای هدیه را در حساب خود مشاهده کنید.</li>
+    </ul>
+
+    <img src="melli-en.png" class="en-logo" alt="Melligold">
+  </section>
+
+  <footer>
+    این سایت به‌طور مستقل و فقط برای معرفی لینک دعوت ملی‌گلد ایجاد شده است.
+  </footer>
+
 </body>
 </html>
+
+[END OF FILE]
